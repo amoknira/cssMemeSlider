@@ -1,51 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 body {
-    background-color:#eeeeee; 
+    background-color:#cfcfcf; 
     margin: auto; 
     text-align: center;
     font-family: 'EB Garamond', serif;
+    font-size: 1.5em; /* 16*1,5=24px */
 }
 .wrapper {
     display: flex;
-	height: 100%;
-	margin: 10% auto 0;
-	width: 80%;
     flex-direction: column;
     justify-content: center;
+	height: 100%;
+	max-width: 60em; /* 16*60=960px */
+	margin: 2% auto 0;
 }
-.wrapper > input {
+/* .wrapper > input {
 	display: none;
-}
+} */
 .slider {
-	background-color: #d19898;
-	/* overflow: hidden; */
-    overflow-x: auto;
-    text-align: center;
-    /*height: 70%;
-	width: inherit; */
-    margin: auto;
-    width: 300px;
-    height: 300px;
     display: flex;
-	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    background-color: #d19898;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    height: 25em;
+    max-width: 50%;
+    margin: auto;
+    border-radius: 0.5em;    /*8px*/
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    box-shadow: 0 0 1.2em rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 1.2em rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 0 1.2em rgba(0, 0, 0, .5);
+    -o-box-shadow: 0 0 1.2em rgba(0, 0, 0, .5);
+    transition: cubic-bezier(0.47, 0, 0.745, 0.715);
+    -webkit-transition: cubic-bezier(0.47, 0, 0.745, 0.715);
+    -moz-transition: cubic-bezier(0.47, 0, 0.745, 0.715);
+    -ms-transition: cubic-bezier(0.47, 0, 0.745, 0.715);
+    -o-transition: cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 .memes {
-    width: 300px;
+    align-items: center;
     flex-shrink: 0;
-    height: 300px;
-    scroll-snap-type: x mandatory;
+    max-width: 100%; /*???*/
+    height: 100%;
+    /* scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch; */
+}
+img{
+    height: inherit;
+    width: inherit;
 }
 .wrapper-pagination-and-description{
-    padding: 2% 10% 5%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    padding: 2em 15em;
 }
 .slider-description{
-    height: 10%;
+    height: 2em;
+    overflow: hidden;
 }
+div .description-item{
+    color: green;
+    opacity: 0;
+    margin: 0;
+}
+.slider-pagination{
+    display: flex;
+}
+label {
+    width: 1.2em;
+    height: 1.1em;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+label:hover {
+    cursor: pointer;
+}
+label:active > .pag-checkbox {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+.pag-checkbox {
+    display: flex;
+    width: 0.6em;
+    height: 0.6em;
+    margin: 0.2em;
+    background-color: #568edb;
+    border: 0.1em solid #568edb;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+label:hover .pag-checkbox {
+    background-color: white;
+    border-color: white;
+    box-shadow: 0em 0em 1.2em rgb(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 1.2em rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 0 1.2em rgba(0, 0, 0, .5);
+    -o-box-shadow: 0 0 1.2em rgba(0, 0, 0, .5);
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
