@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 body {
-    background-color:#cfcfcf; 
+    background-color:#222222; 
     margin: auto; 
     text-align: center;
     font-family: 'EB Garamond', serif;
@@ -10,22 +10,24 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* align-items:center; */
+    background-color:#222222;
 	height: 100%;
 	max-width: 60em; /* 16*60=960px */
-	margin: 2% auto 0;
+	margin: auto;
 }
-/* .wrapper > input {
+.wrapper > input {
 	display: none;
-} */
+}
 .slider {
     display: flex;
-    background-color: #d19898;
+    background-color: #727272;
     overflow: hidden;
     text-align: center;
     align-items: center;
     height: 25em;
     max-width: 50%;
-    margin: auto;
+    margin: 2% auto 0;
     border-radius: 0.5em;    /*8px*/
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
@@ -35,24 +37,23 @@ body {
     -webkit-box-shadow: 0 0 1.2em rgba(0, 0, 0, .5);
     -moz-box-shadow: 0 0 1.2em rgba(0, 0, 0, .5);
     -o-box-shadow: 0 0 1.2em rgba(0, 0, 0, .5);
-    transition: cubic-bezier(0.47, 0, 0.745, 0.715);
-    -webkit-transition: cubic-bezier(0.47, 0, 0.745, 0.715);
-    -moz-transition: cubic-bezier(0.47, 0, 0.745, 0.715);
-    -ms-transition: cubic-bezier(0.47, 0, 0.745, 0.715);
-    -o-transition: cubic-bezier(0.47, 0, 0.745, 0.715);
+
 }
 .memes {
+    display: flex;
     align-items: center;
-    flex-shrink: 0;
-    max-width: 100%; /*???*/
-    height: 100%;
-    /* scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch; */
+    text-align: center;
+    max-width: 100%;
+    transition: ease-in-out 1s;
+    -webkit-transition: ease-in-out 1s;
+    -moz-transition: ease-in-out 1s;
+    -ms-transition: ease-in-out 1s;
+    -o-transition: ease-in-out 1s;
 }
 img{
-    height: inherit;
-    width: inherit;
+    height: 25em;
+    width: 100%;   
+    flex-shrink: 0; 
 }
 .wrapper-pagination-and-description{
     display: flex;
@@ -61,13 +62,13 @@ img{
     padding: 2em 15em;
 }
 .slider-description{
+    display: flex;
     height: 2em;
     overflow: hidden;
 }
-div .description-item{
-    color: green;
+.description-item{
+    color: #d3d3d3;
     opacity: 0;
-    margin: 0;
 }
 .slider-pagination{
     display: flex;
@@ -118,3 +119,194 @@ label:hover .pag-checkbox {
     -moz-transition: all 0.3s ease 0s;
     -ms-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
+}
+#mem1:checked ~ .wrapper-pagination-and-description .slider-pagination label[for=mem1] .pag-checkbox,
+#mem2:checked ~ .wrapper-pagination-and-description .slider-pagination label[for=mem2] .pag-checkbox,
+#mem3:checked ~ .wrapper-pagination-and-description .slider-pagination label[for=mem3] .pag-checkbox,
+#mem4:checked ~ .wrapper-pagination-and-description .slider-pagination label[for=mem4] .pag-checkbox,
+#mem5:checked ~ .wrapper-pagination-and-description .slider-pagination label[for=mem5] .pag-checkbox,
+#mem6:checked ~ .wrapper-pagination-and-description .slider-pagination label[for=mem6] .pag-checkbox,
+#mem7:checked ~ .wrapper-pagination-and-description .slider-pagination label[for=mem7] .pag-checkbox,
+#mem8:checked ~ .wrapper-pagination-and-description .slider-pagination label[for=mem8] .pag-checkbox,
+#mem9:checked ~ .wrapper-pagination-and-description .slider-pagination label[for=mem9] .pag-checkbox,
+#mem10:checked ~ .wrapper-pagination-and-description .slider-pagination label[for=mem10] .pag-checkbox{
+    background-color:transparent;
+}
+#mem1:checked ~ .slider .memes{
+    transform: translateX(0);
+}
+#mem2:checked ~ .slider .memes{
+    transform: translateX(-100%);
+}
+#mem3:checked ~ .slider .memes{
+    transform: translateX(-200%);
+}
+#mem4:checked ~ .slider .memes{
+    transform: translateX(-300%);
+}
+#mem5:checked ~ .slider .memes{
+    transform: translateX(-400%);
+}
+#mem6:checked ~ .slider .memes{
+    transform: translateX(-500%);
+}
+#mem7:checked ~ .slider .memes{
+    transform: translateX(-600%);
+}
+#mem8:checked ~ .slider .memes {
+    transform: translateX(-700%);
+}
+#mem9:checked ~ .slider .memes{
+    transform: translateX(-800%);
+}
+#mem10:checked ~ .slider .memes{
+    transform: translateX(-900%);
+}
+#mem1:checked ~ .wrapper-pagination-and-description .slider-description .description-mem1 {
+    opacity: 1;
+    transition: ease-in-out 1s;
+    -webkit-transition: ease-in-out 1s;
+    -moz-transition: ease-in-out 1s;
+    -ms-transition: ease-in-out 1s;
+    -o-transition: ease-in-out 1s;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+#mem2:checked ~ .wrapper-pagination-and-description .slider-description .description-mem2 {
+    opacity: 1;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+#mem3:checked ~ .wrapper-pagination-and-description .slider-description .description-mem3 {
+    opacity: 1;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+    -moz-transform: translateX(-200%);
+    -ms-transform: translateX(-200%);
+    -o-transform: translateX(-200%);
+}
+#mem4:checked ~ .wrapper-pagination-and-description .slider-description .description-mem4 {
+    opacity: 1;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transform: translateX(-300%);
+    -webkit-transform: translateX(-300%);
+    -moz-transform: translateX(-300%);
+    -ms-transform: translateX(-300%);
+    -o-transform: translateX(-300%);
+}
+#mem5:checked ~ .wrapper-pagination-and-description .slider-description .description-mem5 {
+    opacity: 1;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transform: translateX(-500%);
+    -webkit-transform: translateX(-500%);
+    -moz-transform: translateX(-500%);
+    -ms-transform: translateX(-500%);
+    -o-transform: translateX(-500%);
+}
+#mem6:checked ~ .wrapper-pagination-and-description .slider-description .description-mem6 {
+    opacity: 1;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transform: translateX(-600%);
+    -webkit-transform: translateX(-600%);
+    -moz-transform: translateX(-600%);
+    -ms-transform: translateX(-600%);
+    -o-transform: translateX(-600%);
+}
+#mem7:checked ~ .wrapper-pagination-and-description .slider-description .description-mem7 {
+    opacity: 1;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transform: translateX(-700%);
+    -webkit-transform: translateX(-700%);
+    -moz-transform: translateX(-700%);
+    -ms-transform: translateX(-700%);
+    -o-transform: translateX(-700%);
+}
+#mem8:checked ~ .wrapper-pagination-and-description .slider-description .description-mem8 {
+    opacity: 1;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transform: translateX(-800%);
+    -webkit-transform: translateX(-800%);
+    -moz-transform: translateX(-800%);
+    -ms-transform: translateX(-800%);
+    -o-transform: translateX(-800%);
+}
+#mem9:checked ~ .wrapper-pagination-and-description .slider-description .description-mem9 {
+    opacity: 1;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transform: translateX(-900%);
+    -webkit-transform: translateX(-900%);
+    -moz-transform: translateX(-900%);
+    -ms-transform: translateX(-900%);
+    -o-transform: translateX(-900%);
+}
+#mem10:checked ~ .wrapper-pagination-and-description .slider-description .description-mem10 {
+    opacity: 1;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transform: translateX(-1000%);
+    -webkit-transform: translateX(-1000%);
+    -moz-transform: translateX(-1000%);
+    -ms-transform: translateX(-1000%);
+    -o-transform: translateX(-1000%);
+}
+/* .slider-radio:nth-of-type(1):checked ~ .wrapper-pagination-and-description .slider-description:nth-of-type(1),
+.slider-radio:nth-of-type(2):checked ~ .wrapper-pagination-and-description .slider-description:nth-of-type(2),
+.slider-radio:nth-of-type(3):checked ~ .wrapper-pagination-and-description .slider-description:nth-of-type(3),
+.slider-radio:nth-of-type(4):checked ~ .wrapper-pagination-and-description .slider-description:nth-of-type(4),
+.slider-radio:nth-of-type(5):checked ~ .wrapper-pagination-and-description .slider-description:nth-of-type(5),
+.slider-radio:nth-of-type(6):checked ~ .wrapper-pagination-and-description .slider-description:nth-of-type(6),
+.slider-radio:nth-of-type(7):checked ~ .wrapper-pagination-and-description .slider-description:nth-of-type(7),
+.slider-radio:nth-of-type(8):checked ~ .wrapper-pagination-and-description .slider-description:nth-of-type(8),
+.slider-radio:nth-of-type(9):checked ~ .wrapper-pagination-and-description .slider-description:nth-of-type(9),
+.slider-radio:nth-of-type(10):checked ~ .wrapper-pagination-and-description .slider-description:nth-of-type(10){
+	transition:  0.2s linear;
+	-webkit-transition:  0.2s linear;
+	-moz-transition:  0.2s linear;
+	-ms-transition:  0.2s linear;
+	-o-transition:  0.2s linear;
+	z-index: 6;
+    opacity: 1;
+} not working pochemu-to*/
