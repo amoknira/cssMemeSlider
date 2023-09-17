@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 body {
     background-color:#eeeeee; 
     margin: auto; 
     text-align: center;
+    font-family: 'EB Garamond', serif;
 }
 .wrapper {
     display: flex;
