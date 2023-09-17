@@ -16,16 +16,27 @@ body {
 }
 .slider {
 	background-color: #d19898;
-	height: inherit;
-	overflow: hidden;
-    height: 70%;
-	width: inherit;
+	/* overflow: hidden; */
+    overflow-x: auto;
+    text-align: center;
+    /*height: 70%;
+	width: inherit; */
     margin: auto;
-    
+    width: 300px;
+    height: 300px;
+    display: flex;
 	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+.memes {
+    width: 300px;
+    flex-shrink: 0;
+    height: 300px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 .wrapper-pagination-and-description{
     padding: 2% 10% 5%;
