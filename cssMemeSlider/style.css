@@ -63,10 +63,13 @@ img{
 }
 .slider-description{
     display: flex;
-    height: 2em;
+    justify-content: space-between;
+    height: 3em;
     overflow: hidden;
+    margin: 0;
 }
 .description-item{
+    white-space: nowrap;
     color: #d3d3d3;
     opacity: 0;
 }
@@ -182,11 +185,11 @@ label:hover .pag-checkbox {
     -moz-transition: all 1s;
     -ms-transition: all 1s;
     -o-transition: all 1s;
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
+    transform: translateX(-120%);
+    -webkit-transform: translateX(-120%);
+    -moz-transform: translateX(-120%);
+    -ms-transform: translateX(-120%);
+    -o-transform: translateX(-120%);
 }
 #mem3:checked ~ .wrapper-pagination-and-description .slider-description .description-mem3 {
     opacity: 1;
@@ -195,11 +198,11 @@ label:hover .pag-checkbox {
     -moz-transition: all 1s;
     -ms-transition: all 1s;
     -o-transition: all 1s;
-    transform: translateX(-200%);
-    -webkit-transform: translateX(-200%);
-    -moz-transform: translateX(-200%);
-    -ms-transform: translateX(-200%);
-    -o-transform: translateX(-200%);
+    transform: translateX(-220%);
+    -webkit-transform: translateX(-220%);
+    -moz-transform: translateX(-220%);
+    -ms-transform: translateX(-220%);
+    -o-transform: translateX(-220%);
 }
 #mem4:checked ~ .wrapper-pagination-and-description .slider-description .description-mem4 {
     opacity: 1;
@@ -208,26 +211,13 @@ label:hover .pag-checkbox {
     -moz-transition: all 1s;
     -ms-transition: all 1s;
     -o-transition: all 1s;
-    transform: translateX(-300%);
-    -webkit-transform: translateX(-300%);
-    -moz-transform: translateX(-300%);
-    -ms-transform: translateX(-300%);
-    -o-transform: translateX(-300%);
+    transform: translateX(-690%);
+    -webkit-transform: translateX(-690%);
+    -moz-transform: translateX(-690%);
+    -ms-transform: translateX(-690%);
+    -o-transform: translateX(-690%);
 }
 #mem5:checked ~ .wrapper-pagination-and-description .slider-description .description-mem5 {
-    opacity: 1;
-    transition: all 1s;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transform: translateX(-500%);
-    -webkit-transform: translateX(-500%);
-    -moz-transform: translateX(-500%);
-    -ms-transform: translateX(-500%);
-    -o-transform: translateX(-500%);
-}
-#mem6:checked ~ .wrapper-pagination-and-description .slider-description .description-mem6 {
     opacity: 1;
     transition: all 1s;
     -webkit-transition: all 1s;
@@ -240,6 +230,19 @@ label:hover .pag-checkbox {
     -ms-transform: translateX(-600%);
     -o-transform: translateX(-600%);
 }
+#mem6:checked ~ .wrapper-pagination-and-description .slider-description .description-mem6 {
+    opacity: 1;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transform: translateX(-390%);
+    -webkit-transform: translateX(-390%);
+    -moz-transform: translateX(-390%);
+    -ms-transform: translateX(-390%);
+    -o-transform: translateX(-390%);
+}
 #mem7:checked ~ .wrapper-pagination-and-description .slider-description .description-mem7 {
     opacity: 1;
     transition: all 1s;
@@ -247,11 +250,11 @@ label:hover .pag-checkbox {
     -moz-transition: all 1s;
     -ms-transition: all 1s;
     -o-transition: all 1s;
-    transform: translateX(-700%);
-    -webkit-transform: translateX(-700%);
-    -moz-transform: translateX(-700%);
-    -ms-transform: translateX(-700%);
-    -o-transform: translateX(-700%);
+    transform: translateX(-2050%);
+    -webkit-transform: translateX(-2050%);
+    -moz-transform: translateX(-2050%);
+    -ms-transform: translateX(-2050%);
+    -o-transform: translateX(-2050%);
 }
 #mem8:checked ~ .wrapper-pagination-and-description .slider-description .description-mem8 {
     opacity: 1;
@@ -260,11 +263,11 @@ label:hover .pag-checkbox {
     -moz-transition: all 1s;
     -ms-transition: all 1s;
     -o-transition: all 1s;
-    transform: translateX(-800%);
-    -webkit-transform: translateX(-800%);
-    -moz-transform: translateX(-800%);
-    -ms-transform: translateX(-800%);
-    -o-transform: translateX(-800%);
+    transform: translateX(-1190%);
+    -webkit-transform: translateX(-1190%);
+    -moz-transform: translateX(-1190%);
+    -ms-transform: translateX(-1190%);
+    -o-transform: translateX(-1190%);
 }
 #mem9:checked ~ .wrapper-pagination-and-description .slider-description .description-mem9 {
     opacity: 1;
@@ -273,11 +276,11 @@ label:hover .pag-checkbox {
     -moz-transition: all 1s;
     -ms-transition: all 1s;
     -o-transition: all 1s;
-    transform: translateX(-900%);
-    -webkit-transform: translateX(-900%);
-    -moz-transform: translateX(-900%);
-    -ms-transform: translateX(-900%);
-    -o-transform: translateX(-900%);
+    transform: translateX(-760%);
+    -webkit-transform: translateX(-760%);
+    -moz-transform: translateX(-760%);
+    -ms-transform: translateX(-760%);
+    -o-transform: translateX(-760%);
 }
 #mem10:checked ~ .wrapper-pagination-and-description .slider-description .description-mem10 {
     opacity: 1;
@@ -286,11 +289,11 @@ label:hover .pag-checkbox {
     -moz-transition: all 1s;
     -ms-transition: all 1s;
     -o-transition: all 1s;
-    transform: translateX(-1000%);
-    -webkit-transform: translateX(-1000%);
-    -moz-transform: translateX(-1000%);
-    -ms-transform: translateX(-1000%);
-    -o-transform: translateX(-1000%);
+    transform: translateX(-1060%);
+    -webkit-transform: translateX(-1060%);
+    -moz-transform: translateX(-1060%);
+    -ms-transform: translateX(-1060%);
+    -o-transform: translateX(-1060%);
 }
 /* .slider-radio:nth-of-type(1):checked ~ .wrapper-pagination-and-description .slider-description:nth-of-type(1),
 .slider-radio:nth-of-type(2):checked ~ .wrapper-pagination-and-description .slider-description:nth-of-type(2),
